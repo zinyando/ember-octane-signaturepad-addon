@@ -1,3 +1,6 @@
-<h2 id="title">Welcome to Ember</h2>
+<h2 id="title">Signature Pad Demo</h2>
 
-{{outlet}}
+<SignaturePad @submit={{action this.setSignature}}></SignaturePad>
+
+<hr>
+<img src={{this.signature}}>
